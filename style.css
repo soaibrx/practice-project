@@ -11,6 +11,7 @@
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
+/* start menu section style */
 .menu ul{
     display: flex;
 }
@@ -28,11 +29,14 @@
 }
 
 .menu ul li a:hover{
-    color: red;
-    border-bottom: 2px solid red;
+    color: orange;
+    border-bottom: 2px solid orange;
 }
 
+
+/* start hero section style */
 .hero{
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,13 +53,27 @@
 }
 
 .hero-left p{
-    color: #999999;
+    color: #949393;
+    align-items: center;
     padding-bottom: 10px;
 }
 
-.primary{
+.primary-btn{
+    border: none;
+    color: #fff;
+    cursor: pointer;
     margin-top: 10px;
     padding: 8px 20px;
+    transition: all .5s;
+    background: #fe8c00; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fe8c00, #f83600); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fe8c00, #f83600);
+}
+
+.primary-btn:hover{
+    background: #f83600; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,#f83600, #fe8c00); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f83600,#fe8c00);
 }
 
 .hero-right{
@@ -64,4 +82,42 @@
     padding: 50px;
     align-items: center;
     justify-content: center;
+}
+
+/* start heading style */
+.heading{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.heading .underline{
+    height: 3px;
+    width: 100px;
+    margin: 0 auto;
+    background: #fe8c00; /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #fe8c00, #f83600); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #fe8c00, #f83600);
+}
+
+/* start service section style */
+.services{
+    display: grid;
+    padding: 50px 30px;
+    grid-template-columns: repeat(3 , 1fr);
+}
+
+.services img{
+    width: 300px;
+    height: 300px;
+    margin: 0 25px;
+}
+
+.services .card{
+    padding: 15px;
+    margin: 0 20px;
+    transition: all .5s;
+    border: 1px solid #e5e5e5;
+}
+
+.services .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
