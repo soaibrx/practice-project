@@ -94,8 +94,8 @@
     width: 100px;
     margin: 0 auto;
     background: #fe8c00; /* fallback for old browsers */
-   background: -webkit-linear-gradient(to right, #fe8c00, #f83600); /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, #fe8c00, #f83600);
+    background: -webkit-linear-gradient(to right, #fe8c00, #f83600); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fe8c00, #f83600);
 }
 
 /* start service section style */
@@ -120,4 +120,51 @@
 
 .services .card:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* start contact style */
+form{
+    width: 400px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+input[type='text'], input[type='email'], textarea{
+    margin: 8px 0;
+    padding: 8px 0;
+    padding-left: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero{
+        height: auto;
+        display: flex;
+        padding: 10px 30px;
+        flex-direction: column;
+    }
+    .hero-left{
+        width: 100%;
+        padding: 10px 30px;
+    }
+    .hero-right img{
+        width: 350px;
+    }
+    .services{
+        padding: 0;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .services img{
+        margin: 0;
+    }
+    .services .card {
+        margin: 10px 20px;
+    }
+    .contact-main{
+        margin: 15px;
+    }
+    form{
+        width: 100%;
+    }
 }
